@@ -11,71 +11,99 @@
         <header class="flex justify-between items-center mb-4">
             <h1 class="text-2xl font-bold text-blue-600">Dev<span class="text-black">Board</span></h1>
             <div class="flex items-center">
-                <span class="bg-blue-500 text-white px-3 py-1 rounded-full mr-2">23</span>
-                <button class="theme-toggle bg-purple-600 text-white px-4 py-2 rounded-lg">Toggle Theme</button>
+                <span id="task-count-add" class="bg-blue-500 text-white px-3 py-1 rounded-full mr-2">16</span>
+                <button class="theme-toggle bg-purple-600 text-white px-4 py-2 rounded-lg"><img src="/assets/theme-btn.png" alt=""></button>
             </div>
         </header>
         
         <section class="flex justify-between bg-blue-100 p-4 rounded-lg">
-            <div class="text-lg font-semibold">Task Assigned: <strong>6</strong></div>
-           <a href="/blog.html"> <div class="text-lg font-semibold">Discover Something New Today!</div></a>
-            <div class="text-lg" id="current-date"></div>
+            <div class="text-lg font-semibold">Task Assigned: <strong id="task-assigned">6</strong></div>
+            <div class="flex justify-center items-center space-x-4 bg-blue-500 p-2 rounded ">
+                <img src="/assets/board.png" alt="Board Image" class="w-10 h-10">
+                <a href="/blog.html" class="text-lg font-semibold text-white hover:underline">
+                    Discover Something New Today!
+                </a>
+            </div>
+            
+            <div class="flex justify-center items-center space-x-4">
+                <img src="/assets/calender.png" alt="Board Image" class="w-10 h-10">
+                <div class="text-lg" id="current-date"></div>
+            </div>
         </section>
         
-        <section class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
-            <div class="bg-white p-4 shadow rounded-lg border border-gray-200">
+        <section id="task-container" class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
+            <div class="task bg-white p-4 shadow rounded-lg border border-gray-200">
                 <h3 class="text-lg font-semibold">Fix Mobile Button Issue</h3>
                 <p class="text-sm text-gray-500">Shop Ease</p>
                 <p class="text-sm font-medium">Deadline: 21 March 2025</p>
-                <button class="mt-2 bg-green-500 text-white px-3 py-1 rounded">Completed</button>
+                <button class="complete-task mt-2 bg-green-500 text-white px-3 py-1 rounded">Complete</button>
             </div>
-            <div class="bg-white p-4 shadow rounded-lg border border-gray-200">
+            <div class="task bg-white p-4 shadow rounded-lg border border-gray-200">
+                <h3 class="text-lg font-semibold">Fix Mobile Button Issue</h3>
+                <p class="text-sm text-gray-500">Shop Ease</p>
+                <p class="text-sm font-medium">Deadline: 21 March 2025</p>
+                <button class="complete-task mt-2 bg-green-500 text-white px-3 py-1 rounded">Complete</button>
+            </div>
+            <div class="task bg-white p-4 shadow rounded-lg border border-gray-200">
+                <h3 class="text-lg font-semibold">Fix Mobile Button Issue</h3>
+                <p class="text-sm text-gray-500">Shop Ease</p>
+                <p class="text-sm font-medium">Deadline: 21 March 2025</p>
+                <button class="complete-task mt-2 bg-green-500 text-white px-3 py-1 rounded">Complete</button>
+            </div>
+            <div class="task bg-white p-4 shadow rounded-lg border border-gray-200">
+                <h3 class="text-lg font-semibold">Fix Mobile Button Issue</h3>
+                <p class="text-sm text-gray-500">Shop Ease</p>
+                <p class="text-sm font-medium">Deadline: 21 March 2025</p>
+                <button class="complete-task mt-2 bg-green-500 text-white px-3 py-1 rounded">Complete</button>
+            </div>
+            <div class="task bg-white p-4 shadow rounded-lg border border-gray-200">
+                <h3 class="text-lg font-semibold">Fix Mobile Button Issue</h3>
+                <p class="text-sm text-gray-500">Shop Ease</p>
+                <p class="text-sm font-medium">Deadline: 21 March 2025</p>
+                <button class="complete-task mt-2 bg-green-500 text-white px-3 py-1 rounded">Complete</button>
+            </div>
+            <div class="task bg-white p-4 shadow rounded-lg border border-gray-200">
                 <h3 class="text-lg font-semibold">Add Pay Success Modal</h3>
                 <p class="text-sm text-gray-500">Soft Pay</p>
                 <p class="text-sm font-medium">Deadline: 25 March 2025</p>
-                <button class="mt-2 bg-green-500 text-white px-3 py-1 rounded">Completed</button>
-            </div>
-            <div class="bg-white p-4 shadow rounded-lg border border-gray-200">
-                <h3 class="text-lg font-semibold">Add Pay Success Modal</h3>
-                <p class="text-sm text-gray-500">Soft Pay</p>
-                <p class="text-sm font-medium">Deadline: 25 March 2025</p>
-                <button class="mt-2 bg-green-500 text-white px-3 py-1 rounded">Completed</button>
-            </div>
-            <div class="bg-white p-4 shadow rounded-lg border border-gray-200">
-                <h3 class="text-lg font-semibold">Add Pay Success Modal</h3>
-                <p class="text-sm text-gray-500">Meta</p>
-                <p class="text-sm font-medium">Deadline: 25 March 2025</p>
-                <button class="mt-2 bg-green-500 text-white px-3 py-1 rounded">Completed</button>
-            </div>
-            <div class="bg-white p-4 shadow rounded-lg border border-gray-200">
-                <h3 class="text-lg font-semibold">Add Pay Success Modal</h3>
-                <p class="text-sm text-gray-500">Soft Pay</p>
-                <p class="text-sm font-medium">Deadline: 25 March 2025</p>
-                <button class="mt-2 bg-green-500 text-white px-3 py-1 rounded">Completed</button>
-            </div>
-            <div class="bg-white p-4 shadow rounded-lg border border-gray-200">
-                <h3 class="text-lg font-semibold">Add Pay Success Modal</h3>
-                <p class="text-sm text-gray-500">Soft Pay</p>
-                <p class="text-sm font-medium">Deadline: 25 March 2025</p>
-                <button class="mt-2 bg-green-500 text-white px-3 py-1 rounded">Completed</button>
+                <button class="complete-task mt-2 bg-green-500 text-white px-3 py-1 rounded">Complete</button>
             </div>
         </section>
     </div>
     
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const themeToggle = document.querySelector(".theme-toggle");
-            themeToggle.addEventListener("click", function() {
-                document.body.classList.toggle("bg-gray-900");
-                document.body.classList.toggle("text-white");
-            });
-        });
+       const pointsElement = document.getElementById("task-count-add");
+      const taskAssignedElement = document.getElementById("task-assigned");
+      let points = parseInt(pointsElement.textContent); // starts at 16
+      let tasksRemaining = parseInt(taskAssignedElement.textContent); // starts at 6
 
-         // Set current date
-         const currentDateElement = document.getElementById("current-date");
-            const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
-            currentDateElement.textContent = new Date().toLocaleDateString("en-US", options);
-         
+      // Handle task completion
+      const taskButtons = document.querySelectorAll(".complete-task");
+      taskButtons.forEach(button => {
+        button.addEventListener("click", function() {
+          if (confirm("Are you sure you want to complete this task?")) {
+            // Add 2 points for completed task
+            points += 2;
+            // Decrease remaining tasks by 1
+            tasksRemaining--;
+            pointsElement.textContent = points;
+            taskAssignedElement.textContent = tasksRemaining;
+            
+            // Disable button and update its appearance
+            alert("Task completed successfully!");
+            button.textContent = "Completed";
+            button.classList.add("bg-gray-400", "cursor-not-allowed");
+            button.classList.remove("bg-green-500");
+            button.disabled = true;
+          }
+        });
+    
+
+        // Set current date
+        const currentDateElement = document.getElementById("current-date");
+        const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+        currentDateElement.textContent = new Date().toLocaleDateString("en-US", options);
+    });
     </script>
 </body>
 </html>
